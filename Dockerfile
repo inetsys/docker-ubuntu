@@ -10,7 +10,7 @@ RUN echo deb http://us.archive.ubuntu.com/ubuntu/ precise universe multiverse >>
   echo upstart hold | dpkg --set-selections;\
   apt-get update;\
   apt-get -y upgrade;\
-  apt-get -y install wget curl vim python-setuptools;
+  apt-get -y install wget curl vim python-setuptools man;
 
 # Supervisor Installation
 RUN /usr/bin/easy_install supervisor
